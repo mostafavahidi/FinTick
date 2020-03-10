@@ -2,7 +2,7 @@
 {% block title %}Analyze{% endblock %}
 
 {% block content %}
-<div class="jumbotron", style="width:70%; margin:auto; margin-top: 5%;">
+<div class="jumbotron", style="width:70%; margin:auto; margin-top: 5%; opacity: 75%;">
     <h1 class="display-4">Welcome to FinTick!</h1>
     <p class="lead">This application will allow you to perform multiple analytical calculations on your stock of choice. It is fast and simple.</p>
 </div>
@@ -13,10 +13,10 @@
 </form> -->
 
 <!--Make sure the form has the autocomplete function switched off:-->
-<form autocomplete=off action="/action_page.php" class="form-group", style="width:50%; margin:auto;">
-    <label class="col-form-label col-form-label-lg" for="inputLarge">Let's begin by typing a stock ticker symbol or company name...</label>
-    <div class="autocomplete" method="post"style="width:100%">
-      <input id="myInput" type="text" name="tickerName" placeholder="i.e. 'AAPL' or 'Apple'" id="inputLarge">
+<form autocomplete=off  action="/action_page.php" class="form-group", style="width:50%; margin:auto;">
+    <label class="col-form-label col-form-label-lg" for="inputLarge" style = "color:white;">Let's begin by typing a stock ticker symbol or company name...</label>
+    <div class="autocomplete" style="width:100%">
+      <input  method="POST" id="myInput" type="text" placeholder="i.e. 'AAPL' or 'Apple'">
     </div>
 </form>
 
